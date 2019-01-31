@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+     <div id="title">
+       <h6>APIs and Microservices Projects:</h6>
+       <h1>03. URL Shortener Microservice</h1>
+     </div>
+     <div class="container">
+       <div id="content">
+         <div class="section">
+        <h2>User Story: </h2>
+        <ol class="user-stories">
+          <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
+          <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+          HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
+          <li>When I visit the shortened URL, it will redirect me to my original link.</li>
+        </ol>
+           </div>
+        <div class="section">
+        <h2>Short URL Creation </h2>
+        <p>
+          example: <code>POST [project_url]/api/shorturl/new</code> - <code>https://www.google.com</code>
+        </p>
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
+          <input id="submit" type="submit" value="SHORTEN URL">
+        </form>
+          </div>
+          <div class="section">
+        <h2>Example Usage:</h2>
+            <button>
+              <a href="https://sweet-gorilla.glitch.me/api/shorturl/3">
+                [project_url]/api/shorturl/3
+              </a>
+            </button>
+        <h2>Will Redirect to:</h2>
+            <p><code>https://forum.freecodecamp.com</code></p>
+         </div>
+       </div>
+      </div>
+      <div id="footer">
+       <h5>Designed and coded by <a href="https://github.com/Madness2aMaze" target="_blank" id="footbar" title="©2019 Cătălin Anghel-Ursu @Madness2aMaze - All Rights Reserved">@Madness2aMaze ©2019 - All Rights Reserved</a> | <a href="https://codepen.io/Madness2aMaze/"
+          title="More of my works" target="_blank"><i class="fab fa-codepen"></i></a> | <a href="https://www.freecodecamp.com/" target="_blank" title="FreeCodeCamp"><i class="fab fa-free-code-camp"></i></a>
+       </h5>
+     </div>
+   </body>
+
+</html>
+
