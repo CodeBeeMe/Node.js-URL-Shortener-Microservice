@@ -1,7 +1,8 @@
 {
-	"name": "shorturl",
+	"name": "fcc-api-projects-Node.js-URL-Shortener-Microservice",
 	"version": "0.0.1",
-	"description": "API project for freeCodeCamp",
+	"description": "An FCC Backend Project",
+	"author": "https://github.com/Madness2aMaze",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
